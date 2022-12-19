@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Расписание</title>
+</head>
+<body>
+<div class="schedule-container">
+    <div class="header">
+        <div class="actions">
+            <div class="button2" id="previousWeek" onclick="changeWeek(false)">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Предыдущая неделя
+            </div>
+            <div class="button2" id="previousDay" onclick="changeDay(false)">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Предыдущий день
+            </div>
+        </div>
+        <div class="info">
+            <select id="select-group">
+                <option> Group </option>
+            </select>
+            <select id="select-teacher">
+                <option> Teacher </option>
+            </select>
+            <p class="selected-rasp">6411-100503D</p>
+        </div>
+        <div class="actions">
+            <div class="button2" id="nextWeek" onclick="changeWeek(true)">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Следующая неделя
+            </div>
+            <div class="button2" id="nextDay" onclick="changeDay(true)">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Следующий день
+            </div>
+        </div>
+    </div>
+    <table id="schedule"></table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
